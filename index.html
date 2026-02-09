@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Langtern - Language Learning App</title>
+  <meta name="description" content="Langtern is a language learning app for Chinese and English. Available on iOS and Android.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="images/logo/icon-192x192.png">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { background-color: #000; color: #e0e0e0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a { color: #f2c953; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 24px 48px;
+      text-align: center;
+    }
+    .hero img.logo {
+      max-width: 320px;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    .hero .tagline {
+      font-size: 1.25rem;
+      color: #b0b0b0;
+      max-width: 520px;
+      margin-bottom: 48px;
+    }
+
+    .languages {
+      display: flex;
+      gap: 48px;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0 24px 64px;
+    }
+    .lang-card {
+      background: #141414;
+      border: 1px solid #252525;
+      border-radius: 12px;
+      padding: 40px 32px;
+      text-align: center;
+      max-width: 340px;
+      width: 100%;
+    }
+    .lang-card h2 {
+      font-size: 1.5rem;
+      color: #f2c953;
+      margin-bottom: 8px;
+    }
+    .lang-card .lang-label {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+    }
+    .lang-card p {
+      color: #999;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+    }
+    .store-badges {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .store-badges a img {
+      height: 44px;
+    }
+
+    .features {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 24px 64px;
+      text-align: center;
+    }
+    .features h2 {
+      font-size: 1.5rem;
+      color: #f2c953;
+      margin-bottom: 24px;
+    }
+    .features ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+    .features li {
+      background: #141414;
+      border: 1px solid #252525;
+      border-radius: 8px;
+      padding: 12px 20px;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    footer {
+      margin-top: auto;
+      border-top: 1px solid #1a1a1a;
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #666;
+    }
+    footer .links {
+      margin-bottom: 12px;
+    }
+    footer .links a {
+      margin: 0 12px;
+      color: #999;
+    }
+    footer .links a:hover {
+      color: #f2c953;
+    }
+
+    @media (max-width: 600px) {
+      .hero { padding: 48px 16px 32px; }
+      .hero img.logo { max-width: 240px; }
+      .languages { gap: 24px; padding: 0 16px 48px; }
+      .lang-card { padding: 28px 20px; }
+      .features { padding: 0 16px 48px; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <img src="images/langtern_title.png" alt="Langtern" class="logo">
+    <p class="tagline">A language learning app for Chinese and English. All your data stays on your device.</p>
+  </section>
+
+  <section class="languages">
+    <div class="lang-card">
+      <div class="lang-label">&#x4E2D;&#x6587;</div>
+      <h2>Learn Chinese</h2>
+      <p>Mandarin Chinese with integrated dictionary, flashcards, media player, and ebook reader.</p>
+      <div class="store-badges">
+        <a href="https://apps.apple.com/us/app/id1578011970">
+          <img src="images/stores/app_store_en.png" alt="Download on the App Store">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.langtern.chinese">
+          <img src="images/stores/play_store_en.png" alt="Get it on Google Play">
+        </a>
+      </div>
+    </div>
+
+    <div class="lang-card">
+      <div class="lang-label">English</div>
+      <h2>Learn English</h2>
+      <p>English with integrated dictionary, flashcards, media player, and ebook reader.</p>
+      <div class="store-badges">
+        <a href="https://apps.apple.com/us/app/id1615593750">
+          <img src="images/stores/app_store_en.png" alt="Download on the App Store">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.langtern.english">
+          <img src="images/stores/play_store_en.png" alt="Get it on Google Play">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Features</h2>
+    <ul>
+      <li>Integrated dictionary</li>
+      <li>Flashcard creation &amp; review</li>
+      <li>Offline media player</li>
+      <li>Ebook &amp; PDF reader</li>
+      <li>Web assistant</li>
+      <li>Works offline</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="public/doc/en/tos.html">Terms of Service</a>
+      <a href="public/doc/en/privacy.html">Privacy Policy</a>
+      <a href="public/doc/es/tos.html">Condiciones de uso</a>
+      <a href="public/doc/es/privacy.html">Pol&iacute;tica de privacidad</a>
+    </div>
+    <div>contact@langtern.com</div>
+  </footer>
+
+</body>
+</html>
